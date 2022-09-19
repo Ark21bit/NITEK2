@@ -238,6 +238,7 @@ input {
 .filter .item .content-link{   
     flex-direction: column;
     gap: 2px;
+    flex-wrap: nowrap;
 }
 
 .filter .item .link{
@@ -271,7 +272,12 @@ input {
     padding: 15px;  
 }
 
-
+.ui-accordion-header-icon{
+    background: url(../img/select.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 7px;
+}
 
 .catalogs .headling{
     font-family: 'Museo Sans Cyrl';
@@ -521,7 +527,7 @@ input {
     .proposal .headling{        
         font-size: 30px;        
     }
-
+24px
     .catalogs .headling {        
         font-size: 36px;        
     }

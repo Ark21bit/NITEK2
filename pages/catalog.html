@@ -34,9 +34,9 @@
         <div class="catalogs">
             <div class="headling grid-full">Аренда автокрана</div>
 
-            <div class="filter">
-                <div class="item">                   
-                    <div class="header">Подбор техники</div>
+            <div class="filter " id="accordion"> 
+                <div class="item accordion-item">                                   
+                    <div class="header  accordion-header">Подбор техники</div>
                     <ul class="content content-link">
                         <li class="link"><a href="#">Автовышки</a></li>
                         <li class="link"><a href="#">Автокраны</a></li>
@@ -49,8 +49,8 @@
                         <li class="link"><a href="#">Вахтовка</a></li>
                     </ul>                    
                 </div>
-                <div class="item">                   
-                    <div class="header">Грузоподъёмность <span>/тонн</span></div>
+                <div class="item accordion-item">                   
+                    <div class="header accordion-header">Грузоподъёмность <span>/тонн</span></div>
                     <ul class="content ">
                         <input type="radio" name="capacity" id="radio-1" class="radio d-none">
                         <label for="radio-1">14</label>
@@ -82,8 +82,8 @@
                         <label for="radio-14">250</label>
                     </ul>                    
                 </div>
-                <div class="item">                   
-                    <div class="header">Производитель</div>
+                <div class="item accordion-item">                   
+                    <div class="header accordion-header">Производитель</div>
                     <ul class="content ">
                         <input type="radio" name="Manufacturer" id="radio-15" class="radio d-none">
                         <label for="radio-15">Галичанин</label>
@@ -294,5 +294,8 @@
         </div>
     </main>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>  
+    <script src="../script/dropdown.js"></script>
 </body>
 </html>
