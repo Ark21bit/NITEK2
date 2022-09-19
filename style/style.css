@@ -202,7 +202,7 @@ input {
 
 .catalogs{
     display: grid;
-    grid-template-columns: [full-start] minmax(100px, 306px) 1fr [full-end];
+    grid-template-columns: [full-start] minmax(170px, 306px) 1fr [full-end];
     gap: 24px;
     padding-bottom: 80px;
 }
