@@ -1,3 +1,5 @@
 $( "#tabs" ).tabs({
-    active: 0
+    active: 0,
+    hide: 'fade', 
+    show: 'fade'    
 });
