@@ -79,6 +79,40 @@ input {
     font-family: inherit;
 }
 
+/* Стили swiper */
+
+.mySwiper2{
+    max-height: 390px;
+    margin-bottom: 17px;
+}
+
+.mySwiper2 .swiper-wrapper{
+    max-height: 390px;
+}
+
+.mySwiper2 .swiper-slide{
+    max-height: 390px;
+    
+}
+
+.mySwiper2 .swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+    height: 390px;
+}
+
+.mySwiper .swiper-slide {    
+    opacity: 1;
+    cursor: pointer;
+    height: 87px;
+  }
+
+.mySwiper .swiper-slide img{    
+    height: 100%;
+    object-fit: cover;
+  }
+
 /* Стили */
 
 
@@ -196,6 +230,31 @@ input {
     margin-bottom: 42px;
 }
 
+.proposal_2{
+    padding: 60px 0 70px 114px;
+    background: url(../img/IMG_2.png) , radial-gradient(78.7% 152.99% at 13.94% 30.17%, #0C3C73 30.74%, #009CD9 100%);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.proposal_2 .headling{    
+    font-size: 28.56px;
+    text-transform: uppercase; 
+    margin-bottom: 10.5px;
+}
+
+.proposal_2 p{    
+    font-size: 16.32px;
+    margin-bottom: 28.5px;
+}
+
+.proposal_2 .btn_primary{    
+    border: 1.36px solid #FFFFFF;
+    border-radius: 3.4px;
+    width: 208px;
+    height: 40px;
+}
+
 .catalogs{
     display: grid;
     grid-template-columns: [full-start] minmax(170px, 306px) 1fr [full-end];
@@ -210,21 +269,25 @@ input {
     margin-top: 2px;
 }
 
-.filter .item .header{
+.filter .item .accordion-header{
+    display: flex;
     font-family: 'Museo Sans Cyrl';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
 }
 
-.filter .item .header{    
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+.filter .item .accordion-icon{
+    margin-left: auto;
+    transform: rotateX(180deg) ;
+    transition: transform .5s linear;
 }
 
-.filter .item .header span{  
+.filter .item  .ui-accordion-header-active .accordion-icon{
+    transform: none;
+}
+
+.filter .item .accordion-header span{  
     font-weight: 300;   
 }
 
@@ -470,6 +533,126 @@ input {
     margin-bottom: 38px;  
 }
 
+.products .headling{
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 46px;
+}
+
+.products .content{
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    column-gap: 24px;
+}
+
+.products .content .description{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-left: 46px;
+    max-width: 306px;
+}
+
+.products .content .headling{
+    font-family: 'Museo Sans Cyrl';    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%; 
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.products .content {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #26263A;
+}
+
+.products .content .p-table{
+    display: flex;    
+    margin-bottom: 8px;
+}
+
+.products .content .p-table span{
+    margin-left: auto;  
+}
+
+.products .content .galerey{
+    max-width: 590px;
+}
+
+.products .content .cost_box{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 24px;
+    padding: 42px 16px;
+    background: #F2F4F6;
+    height: fit-content;     
+}
+
+.products .content .cost_box .headling{
+    margin-bottom: 0;
+}
+
+.products .content .cost_box .cost-hour{
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 49.5px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #000000;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #A1A6AB;
+    margin-bottom: 16px;
+}
+
+.products .content .cost_box .cost-hour span{
+    font-family: 'Museo Sans Cyrl';
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.products .content .cost_box .cost{
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.7513px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #000000;    
+}
+
+.products .content .cost_box .cost span{
+    font-family: 'Museo Sans Cyrl';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;  
+}
+
+.products .content .cost_box .btn_primary{
+    width: 100%;   
+    font-size: 18px;
+    line-height: 22px;
+    height: 58px;
+}
+
 @media (max-width:767px) {
 
     .btn_secondary_big {        
@@ -527,7 +710,7 @@ input {
     .proposal .headling{        
         font-size: 30px;        
     }
-24px
+
     .catalogs .headling {        
         font-size: 36px;        
     }
