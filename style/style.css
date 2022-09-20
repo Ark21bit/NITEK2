@@ -79,6 +79,73 @@ input {
     font-family: inherit;
 }
 
+/* Стили формы */
+
+.feedback{
+    width: 100%;
+    max-width: 636px;
+    margin: auto;    
+    margin: 135px auto 66px;    
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%; 
+    text-align: center;
+    color: #26263A;
+}
+
+.feedback .headling{
+    font-family: 'Gogh';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    color: #26263A;
+    margin-bottom: 24px;   
+}
+
+.feedback p{
+    margin-bottom: 42px;
+}
+
+.feedback .btn_primary{
+    max-width: 306px;
+    width: 100%;
+    height: 58px;    
+    font-size: 18px;
+    line-height: 22px;        
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.feedback form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.input_primary{
+    padding: 18px 12px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCD1;
+    box-shadow: 0px 0px 0px #CBDAFC;
+    border-radius: 4px;
+    font-family: 'Gogh';    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #26263A;
+}
+
+.input_primary::placeholder{    
+    font-family: 'Gogh';    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #26263A;
+}
+
 /* Стили tabs */
 
 .ui-tabs-tab {
@@ -89,8 +156,8 @@ input {
     width: fit-content;
     cursor: pointer;
 
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 16px;
     line-height: 120%;
@@ -112,6 +179,11 @@ input {
 .ui-tabs-nav {
     display: flex;
     gap: 16px;
+    overflow: auto;
+}
+
+.ui-tabs-nav::-webkit-scrollbar {
+    height: 0px;
 }
 
 /* Стили swiper */
@@ -146,18 +218,28 @@ input {
 .mySwiper .swiper-slide img{    
     height: 100%;
     object-fit: cover;
+    width: 100%;
   }
 
 /* Стили */
+
+body{
+    font-family: 'Museo Sans Cyrl';
+}
+
+.bg1{
+    background: linear-gradient(180deg, #EEF1F4 0%, rgba(231, 239, 247, 0) 100%);
+}
 
 
 .breadcrumbs {
     padding: 25px 0;   
 }
+
 .breadcrumbs ul li{
     display: inline; 
     font-family: 'Gogh';
-    font-style: normal;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;        
@@ -197,7 +279,7 @@ input {
     border: 2px solid #FFFFFF;
     border-radius: 5px;
     font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+    
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
@@ -212,8 +294,8 @@ input {
     border: 1px solid #003771;
     border-radius: 3px;
 
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -229,8 +311,8 @@ input {
     background: #003771;
     border-radius: 3px;
 
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -248,8 +330,8 @@ input {
 
 .proposal .headling{
     margin-bottom: 16px;  
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 42px;
     line-height: 120%;
@@ -257,8 +339,8 @@ input {
 }
 
 .proposal p{
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 24px;
     line-height: 150%;
@@ -307,8 +389,8 @@ input {
 
 .filter .item .accordion-header{
     display: flex;
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 16px;
 }
@@ -343,8 +425,8 @@ input {
 .filter .item .link{
     padding: 16px;
     background: #F2F4F6;
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 16px;
     line-height: 120%;  
@@ -358,8 +440,8 @@ input {
     width: fit-content;
     cursor: pointer;
 
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 16px;
     line-height: 120%;
@@ -379,8 +461,8 @@ input {
 }
 
 .catalogs .headling{
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;    
@@ -402,8 +484,8 @@ input {
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 14px;
     line-height: 150%;
@@ -420,8 +502,8 @@ input {
 .catalog .card .text .header{
     margin-bottom: 16px;
 
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;  
@@ -459,8 +541,8 @@ input {
 .advantages .headling{
     display: flex;
     align-items: center;
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 120%;
@@ -475,7 +557,7 @@ input {
     align-items: center;
     column-gap: 16px;
     font-family: 'Montserrat';
-    font-style: normal;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -484,15 +566,15 @@ input {
 }
 
 .advantages .text .number{
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 80px;
     line-height: 150%;
 }
 
 .advantages .text .number span{
-    font-family: 'Museo Sans Cyrl';
+     
     font-size: 45px;
     font-weight: 700;
     line-height: 68px;
@@ -504,8 +586,8 @@ input {
     display: flex;
     justify-content: space-between;
     gap: 24px;    
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 18px;
     line-height: 150%;
@@ -532,8 +614,8 @@ input {
 
 .partners .headling{
     justify-self: flex-start;
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 120%;
@@ -550,8 +632,8 @@ input {
 }
 
 .additional_text{
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
@@ -561,7 +643,7 @@ input {
 
 .additional_text .headling{
     font-family: 'Gogh';
-    font-style: normal;
+    
     font-weight: 800;
     font-size: 36px;
     line-height: 120%;    
@@ -570,8 +652,8 @@ input {
 }
 
 .products .headling{
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
@@ -579,13 +661,14 @@ input {
 }
 
 .products .content{
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+         
     font-weight: 300;
     font-size: 16px;
-    line-height: 150%;
-    display: flex;
-    column-gap: 24px;
+    line-height: 150%;    
 }
 
 .products .content .description{
@@ -596,8 +679,14 @@ input {
     max-width: 306px;
 }
 
+.products .content .description .details{    
+    font-weight: 700;
+    color: #009DD9;
+    margin-top: 8px;
+}
+
 .products .content .headling{
-    font-family: 'Museo Sans Cyrl';    
+         
     font-weight: 700;
     font-size: 16px;
     line-height: 120%; 
@@ -606,8 +695,8 @@ input {
 }
 
 .products .content {
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
@@ -632,6 +721,7 @@ input {
 
 .products .content .galerey{
     max-width: 590px;
+    width: 100%;
 }
 
 .products .content .cost_box{
@@ -641,7 +731,8 @@ input {
     row-gap: 24px;
     padding: 42px 16px;
     background: #F2F4F6;
-    height: fit-content;     
+    height: fit-content;  
+    max-width: 306px;   
 }
 
 .products .content .cost_box .headling{
@@ -649,8 +740,8 @@ input {
 }
 
 .products .content .cost_box .cost-hour{
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 900;
     font-size: 49.5px;
     line-height: 120%;
@@ -662,7 +753,7 @@ input {
 }
 
 .products .content .cost_box .cost-hour span{
-    font-family: 'Museo Sans Cyrl';
+     
     font-size: 23px;
     font-weight: 900;
     line-height: 27px;
@@ -671,8 +762,8 @@ input {
 }
 
 .products .content .cost_box .cost{
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 25.7513px;
     line-height: 120%;
@@ -681,7 +772,7 @@ input {
 }
 
 .products .content .cost_box .cost span{
-    font-family: 'Museo Sans Cyrl';
+     
     font-size: 12px;
     font-weight: 700;
     line-height: 14px;
@@ -701,9 +792,10 @@ input {
     padding-bottom: 104px;
 }
 
-.property .tab{
-    display: flex;    
+.property .tab{    
+    display: flex;
     column-gap: 24px;
+    flex-wrap: wrap;
 }
 
 .property .ui-tabs-nav{
@@ -715,8 +807,8 @@ input {
     flex-direction: column;
     row-gap: 24px;
     max-width: 526px;
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
@@ -725,8 +817,8 @@ input {
 }
 
 .property .headling{ 
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -743,20 +835,54 @@ input {
 }
 
 .other_box {
-    padding: 98px 92px;
+    padding: 98px 0 92px;
     background: linear-gradient(173.16deg, #EEF1F4 5.74%, #FFFFFF 103.32%);
 }
 
 .other_box .headling{
     margin-bottom: 24px;
-    font-family: 'Museo Sans Cyrl';
-    font-style: normal;
+     
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
 }
 
 @media (max-width:767px) {
+
+    /* Стили swiper */
+
+.mySwiper2{
+    max-height: 295px; 
+    margin-bottom: 6px;   
+}
+
+.mySwiper2 .swiper-wrapper{
+    max-height: 295px;
+}
+
+.mySwiper2 .swiper-slide{
+    max-height: 295px;    
+}
+
+.mySwiper2 .swiper-slide img{   
+    max-height: 295px;
+    height: 295px;
+}
+
+.mySwiper .swiper-slide {        
+    height: 74px;
+}
+
+/* стили tabs */
+.ui-tabs-tab a{
+    padding: 13px;
+    font-size: 14.725px;
+}
+
+/* Стили */
+
+
 
     .btn_secondary_big {        
         width: 297px;        
@@ -791,8 +917,8 @@ input {
         background: #FFFFFF;
         box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
         border-radius: 8px;
-        font-family: 'Museo Sans Cyrl';
-        font-style: normal;
+         
+        
         font-weight: 300;
         font-size: 14px;
         line-height: 150%;
@@ -850,6 +976,103 @@ input {
     .additional_text .headling {        
         font-size: 24px;      
         margin-bottom: 24px;  
+    }
+
+    .products .headling{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .products .content .description {        
+        margin-left: 0;        
+    }
+
+    .products .content .headling {
+        margin-bottom: 16px;
+    }
+
+    .products .content .cost_box {        
+        padding: 24px 16px;       
+    }
+
+    .property .img {
+        margin-left: 0;
+    }
+
+    .property .tab {        
+        gap: 36px;        
+    }
+
+    .property .ui-tabs-nav {
+        margin-bottom: 34px;
+    }
+
+    .other_box {
+        padding: 80px 0 50px;
+        background: linear-gradient(173.16deg, #EEF1F4 5.74%, #FFFFFF 103.32%);
+    }
+
+    .other_box .headling {
+        display: none;
+    }
+
+    .other_box  .catalog {
+        row-gap: 26px;
+    }
+
+    .proposal_2 {   
+        background: url(../img/image8.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 554px;
+        background-position: bottom;
+        padding: 57px 0 49px;    
+        margin-bottom: 47px;
+    }
+
+    .feedback  {
+        font-size: 14px;
+        margin: 31px auto 66px;
+    }   
+
+    .feedback p {
+        margin-bottom: 24px;
+    }   
+
+    .feedback .headling {
+        font-size: 28px;
+    }    
+
+    .feedback form {
+        gap: 16px;
+    }
+
+    .feedback .btn_primary {        
+        margin-top: 16px;
+    }    
+    
+}
+
+@media (max-width:449px) {
+    .mySwiper2{
+        max-height: 195px;    
+    }
+    
+    .mySwiper2 .swiper-wrapper{
+        max-height: 195px;
+    }
+    
+    .mySwiper2 .swiper-slide{
+        max-height: 195px;    
+    }
+    
+    .mySwiper2 .swiper-slide img{   
+        max-height: 195px;
+        height: 195px;
+    }
+    
+    .mySwiper .swiper-slide {        
+        height: 74px;
     }
 }
 
