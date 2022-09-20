@@ -188,6 +188,11 @@ input {
 
 /* Стили swiper */
 
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: ''!important;
+    transform:scale(1.5);
+}
+
 .mySwiper2{
     max-height: 390px;
     margin-bottom: 17px;
