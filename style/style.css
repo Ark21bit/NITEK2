@@ -79,6 +79,41 @@ input {
     font-family: inherit;
 }
 
+/* Стили tabs */
+
+.ui-tabs-tab {
+    display: flex;
+    
+    background: #F2F4F6;
+    border-radius: 8px;
+    width: fit-content;
+    cursor: pointer;
+
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.ui-tabs-tab a{
+    padding: 16px;
+}
+
+.ui-tabs-active {
+    background: #FFFFFF;
+    border: 1px solid #000000;     
+}
+
+.ui-tabs-active a{
+    padding: 15px;   
+}
+
+.ui-tabs-nav {
+    display: flex;
+    gap: 16px;
+}
+
 /* Стили swiper */
 
 .mySwiper2{
@@ -235,6 +270,7 @@ input {
     background: url(../img/IMG_2.png) , radial-gradient(78.7% 152.99% at 13.94% 30.17%, #0C3C73 30.74%, #009CD9 100%);
     background-repeat: no-repeat;
     background-position: right;
+    margin-bottom: 132px;
 }
 
 .proposal_2 .headling{    
@@ -329,7 +365,7 @@ input {
     line-height: 120%;
 }
 
-.radio:checked + label {
+.radio:checked + label{
     background: #FFFFFF;
     border: 1px solid #000000; 
     padding: 15px;  
@@ -578,13 +614,20 @@ input {
     color: #26263A;
 }
 
-.products .content .p-table{
-    display: flex;    
-    margin-bottom: 8px;
+.p-table{
+    display: flex;   
 }
 
-.products .content .p-table span{
+.p-table span{
     margin-left: auto;  
+}
+
+.products {     
+    margin-bottom: 36px;
+}
+
+.products .content .p-table{     
+    margin-bottom: 8px;
 }
 
 .products .content .galerey{
@@ -651,6 +694,66 @@ input {
     font-size: 18px;
     line-height: 22px;
     height: 58px;
+}
+
+.property {
+    margin-top: 36px;
+    padding-bottom: 104px;
+}
+
+.property .tab{
+    display: flex;    
+    column-gap: 24px;
+}
+
+.property .ui-tabs-nav{
+    margin-bottom: 42px;
+}
+
+.property .text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 526px;
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    flex-grow: 1;
+}
+
+.property .headling{ 
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+
+}
+
+.property .img { 
+    margin-left: 110px;
+}
+
+.property .img .headling{ 
+    margin-bottom: 43px;
+}
+
+.other_box {
+    padding: 98px 92px;
+    background: linear-gradient(173.16deg, #EEF1F4 5.74%, #FFFFFF 103.32%);
+}
+
+.other_box .headling{
+    margin-bottom: 24px;
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
 }
 
 @media (max-width:767px) {
