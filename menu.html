@@ -19,7 +19,7 @@
             line-height: 19px;  
         }
 
-        .city_search .citys .citys-item{
+        .citys-item{
             padding: 13px 16px 16px;
             color: #4F5963;
             border-radius: 4px;
@@ -67,6 +67,39 @@
             cursor: pointer;
         }
 
+        .citys-dropdown{
+            display: flex;
+            flex-direction: column;           
+        }        
+
+        .citys-dropdown>.header{
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .citys-dropdown>.body{
+            display: none;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .citys-dropdown.active>.body{
+            display: flex;           
+        }
+
+        .citys-dropdown.active>.body>.citys-item:last-child{
+            padding-bottom: 0;
+        }
+
+        .citys-dropdown .citys-dropdown-toggle .toggle-icon{
+            stroke:#009DD9;
+        }
+
+        .citys-dropdown.active .citys-dropdown-toggle .toggle-icon{
+            stroke:#7D7D7D;
+        }
+
         @media  (max-width: 767px){
             .city_search{
              width: calc(100% - 54px);       
@@ -84,16 +117,23 @@
             <span class="search_clear" id="search_clear"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.184 1.06091L1.06213 13.1827M1.06213 1.06091L13.184 13.1827" stroke="#666674" stroke-width="2" stroke-linecap="round"/></svg></span>
         </div>        
         <div class="citys" data-city="Москва">
-            <div class="citys-item" data-city="Москва">Москва</div>
-            <div class="citys-item" data-city="Санкт-Петербург">Санкт-Петербург</div>
-            <div class="citys-item" data-city="Иркутск">Иркутск</div>
-            <div class="citys-item" data-city="Красноярск">Красноярск</div>
-            <div class="citys-item" data-city="Хабаровск">Хабаровск</div>
-            <div class="citys-item" data-city="Владивосток">Владивосток</div>
-            <div class="citys-item" data-city="Магадан">Магадан</div>
-            <div class="citys-item" data-city="Чита">Чита</div>
-            <div class="citys-item" data-city="Амурская область">Амурская область</div>
-            <div class="citys-item" data-city="Якутск">Якутск</div>
+            <div class="citys-item citys-dropdown active" data-city="Москва">
+                <div class="header"><a href="#">Москва</a><span class="citys-dropdown-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none"><path class="toggle-icon" d="M1 1.00026L7.5 7.93359L14 1.00026"  stroke-width="2"/></svg></span></div>
+                <div class="body">
+                    <div class="citys-item" data-city="подпункт 1">подпункт 1</div>
+                    <div class="citys-item" data-city="подпункт 2">подпункт 2</div>
+                    <div class="citys-item" data-city="Москва">Москва</div>
+                </div>
+            </div>
+            <div class="citys-item" data-city="Санкт-Петербург"><a href="#">Санкт-Петербург</a></div>
+            <div class="citys-item" data-city="Иркутск"><a href="#">Иркутск</a></div>
+            <div class="citys-item" data-city="Красноярск"><a href="#">Красноярск</a></div>
+            <div class="citys-item" data-city="Хабаровск"><a href="#">Хабаровск</a></div>
+            <div class="citys-item" data-city="Владивосток"><a href="#">Владивосток</a></div>
+            <div class="citys-item" data-city="Магадан"><a href="#">Магадан</a></div>
+            <div class="citys-item" data-city="Чита"><a href="#">Чита</a></div>
+            <div class="citys-item" data-city="Амурская область"><a href="#">Амурская область</a></div>
+            <div class="citys-item" data-city="Якутск"><a href="#">Якутск</a></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

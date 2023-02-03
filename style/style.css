@@ -1512,66 +1512,6 @@ ol{
     line-height: 150%;
 }
 
-.city_search{
-    width: 256px;
-    padding: 8px 4px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;  
-}
-
-.city_search .citys .citys-item{
-    padding: 13px 16px 16px;
-    color: #4F5963;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.city_search .citys-item:hover{
-    color: #000000;
-    background: #F5F8FB;
-}
-
-.search_input_box{
-    position: relative;
-}
-
-.search_input{
-    background: #FFFFFF;
-    border: 1px solid #CCCCD1;
-    box-shadow: 0px 0px 0px #CBDAFC;
-    border-radius: 4px;                              
-    color: #000000;
-    padding: 14.5px 12px;
-    margin-bottom: 8px; 
-    width: 100%;            
-    outline: #CCCCD1;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-}
-
-.search_input::placeholder{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;                    
-    color: #A2A5A8;
-}
-
-.search_clear{
-    display: flex;
-    position: absolute;
-    right: 12px;
-    top:45%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-
 @media (max-width:989px) {
     .about_us>.body>.img {        
         margin-top: 60px;
