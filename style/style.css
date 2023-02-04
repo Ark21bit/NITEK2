@@ -895,6 +895,7 @@ ol{
     display: flex;    
     align-items: center;
     gap: 34px;
+    text-transform: uppercase;
 }
 
 .services{
@@ -1437,6 +1438,7 @@ ol{
     line-height: 130%;
     text-transform: uppercase;
     color: #009DD9;
+    margin-left: 50px;
 }
 
 .services_description>.right{
@@ -1447,6 +1449,10 @@ ol{
     align-self: flex-end;
 }
 
+.services_description>.right>.title {       
+    font-weight: 700;  
+    margin-bottom: 16px;
+}
 
 .service_benefits{
     margin-top: 60px;
@@ -1455,6 +1461,59 @@ ol{
     gap:24px;
     margin-bottom: 136px;
     justify-content: space-evenly
+}
+
+.service_benefits-progres{    
+    grid-template-columns: repeat(5, 1fr);    
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.service_benefits .progres{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    margin-top: 9px;
+}
+
+.service_benefits-progres .progres>.num{
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #009DD9;
+    border-radius: 1000px;
+    width: 46px;
+    padding: 2px;
+    color:white;
+    aspect-ratio: 1/1;
+}
+
+.service_benefits-progres .item:first-child .progres>.line{    
+    width: calc(50%);   
+    left: 50%; 
+    transform: translate(0);
+}
+
+.service_benefits-progres .item:last-child .progres>.line{    
+    width: 50%  ;
+    left: 0; 
+    transform: translate(0);
+}
+
+.service_benefits .progres>.line{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    left: 50%;
+    width: calc(100% + 48px);
+    background: #D2E0ED;
+    height: 2px;
 }
 
 .service_benefits>.item{
@@ -1477,23 +1536,49 @@ ol{
     color: #000000;    
 }
 
+.service_benefits-progres>.item>.title{
+    margin-top: 0;
+}
+
 .services_dop{
     position:relative;
-    padding: 67px 10px 83px 106px;
+    padding: 46px 10px 46px 106px;
     color:white;
-    background: radial-gradient(78.7% 152.99% at 13.94% 30.17%, #0C3C73 30.74%, #009CD9 100%)
+    background: radial-gradient(78.7% 152.99% at 13.94% 30.17%, #0C3C73 30.74%, #009CD9 100%);
+    margin-bottom: 143px;
+    min-height: 305px;
+    display: flex;
+    align-items: center;
 }
 
 .services_dop>.img{
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
-    mask: url(../img/services_mask.png); 
+    height: 100%;    
+    mask-image: url(../img/services_mask.png);
+    -webkit-mask-image:url(../img/services_mask.png);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-size:cover;    
+    max-width: 722px;    
+}
+
+.services_dop>.item{
+    position: relative;
+    z-index: 1;
+    max-width: 415px;
 }
 
 .services_dop .title{
     font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.services_dop .item .description{
+    font-weight: 300;
     font-size: 20px;
     line-height: 150%;
 }
@@ -1512,9 +1597,149 @@ ol{
     line-height: 150%;
 }
 
+.services_dop .ul_title-template{
+    font-size: 16px;
+}
+
+.services_dop .ul-template{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.services_dop .description-template{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.price_list{    
+    background: linear-gradient(180deg, #EEF1F4 0%, rgba(231, 239, 247, 0) 100%);
+    padding-top: 60px;
+    padding-bottom: 88px;
+}
+
+.price_list>.wrapper{
+    display: flex;
+    column-gap: 134px;
+}
+
+.price_list>.wrapper>*{
+    flex:1;
+}
+
+.price_list .img_box{
+    max-width: 520px;
+}
+
+.price_list .form_box{
+    max-width: 526px;
+}
+
+
+.price_list .form_box .form{
+    gap:16px;
+}
+
+.price_list .form_box .form>.headling{
+    margin-bottom: 26px;
+    margin-top: 25px;
+}
+
+.price_list .form_box .btn{ 
+    margin-top: 49px;
+    max-width: 306px;
+}
+
+.price_list .feedback .form_box{
+    max-width: none;
+}
+
+.price_list .feedback {
+    margin: auto;
+    padding-top: 28px;
+}
+
+.services_description .ul_title{
+    font-size: 16px;  
+}
+
+.services_description .ul { 
+    list-style: disc;
+    list-style-position: inside;
+    font-weight: 300;
+    font-size: 16px;  
+}
+
+.services_text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 1105px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 110px;
+    text-align: center;
+    color: #26263A;
+}
+
+.text_img_box-services {
+    margin-bottom: 146px;
+    align-items: center; 
+    justify-content: start;
+    column-gap: 88px;
+}
+
+.text_img_box-services .text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;    
+    color: #26263A;
+    max-width: 478px;   
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mb-25{
+    margin-bottom: 100px;
+}
+
+.mt-4{
+    margin-top: 16px;
+}
+
+.ml-0{
+    margin-left: 0!important;
+}
+
+.max-w-125{
+    max-width: 500px!important;
+}
+
 @media (max-width:989px) {
     .about_us>.body>.img {        
         margin-top: 60px;
+    }
+
+    .price_list>.wrapper{        
+        column-gap: 50px;
+    }
+
+    .service_benefits-progres{    
+        grid-template-columns: repeat(4, 1fr);    
+        justify-content: center
     }
 }
 
@@ -1865,21 +2090,101 @@ ol{
 
     .history .swiper-slide .text {        
         margin-left: 0;
-    }
+    }    
 
     .services_description{
         flex-direction: column;
         row-gap: 16px;
         margin-bottom: 25px;
+        margin-top: -25px;
+    }
+
+    .services_description>.left {        
+        font-size: 22px;     
+        margin-left: 0;   
+    }
+
+    .services_description>.right {       
+        font-size: 16px;       
     }
     
     .service_benefits{
         margin-top: 30px;
+        margin-bottom: 70px;
+    }     
+
+    .service_benefits>.item {        
+        font-size: 14px;        
+    }
+
+    .services_dop{
+        padding: 0;
+        margin-bottom: 70px;
+        flex-direction: column;
+    }
+
+    .services_dop .item {
+        padding: 15px;
+        padding-bottom: 8px;
+    }
+
+    .services_dop .ul_box {
+        flex-direction: column;
+    }
+
+    .services_dop>.img{
+        position: static;  
+        mask-image: none;
+        -webkit-mask-image:none;   
+        height: auto;
+        max-width: 100%;     
+        width: 100%;  
+    }    
+
+    .price_list {       
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .price_list>.wrapper{
+        flex-direction: column;
+    }
+
+    .price_list>.wrapper>* {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price_list>.wrapper>.form_box  {
+        width: 100%;
+    }
+
+    .price_list>.wrapper>.form_box .form>.headling {
+        margin-bottom: 8px;
+        margin-top: 8px;    
+        text-align: center;
+    }
+
+    .price_list>.wrapper>.form_box .btn {
+        margin-top: 16px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    .service_benefits-progres{    
+        grid-template-columns: repeat(3, 1fr);    
+        justify-content: center
+    }
+
+    .services_text {        
+        margin-bottom: 50px;       
+    }
+
+    .text_img_box-services {
+        margin-bottom: 70px;        
     }
     
-    .city_search{
-        width: 100%;       
-    }
 }
 
 @media (max-width:649px) { 
@@ -1962,6 +2267,32 @@ ol{
         gap: 30px;
         flex-direction: column;
     }
+
+    .price_list>.wrapper>.form_box .btn {
+        max-width: 100%;
+        
+    }
+
+    .service_benefits-progres{    
+        grid-template-columns: repeat(2, 1fr);    
+        justify-content: center
+    }
+
+    .services_dop .description-template {
+        font-size: 18px;       
+    }
+
+    .services_dop .ul_title-template{
+        font-size: 14px;
+    }
+    
+    .services_dop .ul-template {
+        font-size: 14px;        
+    }
+
+    .text_img_box-services .text {      
+        font-size: 16px;       
+    }
  }
 
 @media (max-width:449px) {  
@@ -2005,6 +2336,15 @@ ol{
         transform: none;
         height: auto;
         padding: 25px;
+    }
+
+    .service_benefits-progres{    
+        grid-template-columns: repeat(1, 1fr);    
+        justify-content: center
+    }
+
+    .services_header .wrapper .headling {
+        font-size: 27px;       
     }
 
 }
